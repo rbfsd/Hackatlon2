@@ -1,6 +1,15 @@
 const express = require("express");
 const path = require("path");
+const pgp = require("pg-promise")();
 const bodyParser = require("body-parser");
+
+const db = pgp({
+  user: "postgres",
+  password: "123456",
+  host: "localhost",
+  port: 5432,
+  database: "Heroes",
+});
 
 const app = express();
 const port = 3000;
