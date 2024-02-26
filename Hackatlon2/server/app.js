@@ -9,10 +9,12 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  const indexPath = path.join(__dirname, "../public/index.html");
-  res.sendFile(indexPath);
-});
+// app.get("/", (req, res) => {
+//   const indexPath = path.join(__dirname, "../public/index.html");
+//   res.sendFile(indexPath);
+// });
+
+app.use("/", express.static(path.join(__dirname, "..", "public")));
 
 app.get("/about", (req, res) => {
   const indexPath = path.join(__dirname, "../public/about.html");
