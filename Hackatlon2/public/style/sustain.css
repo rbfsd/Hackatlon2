@@ -1,0 +1,110 @@
+/* Style général de la todolist */
+.wrapper {
+    width: 40vw;
+    height: 50vh;
+    background-color: transparent;
+    border: 2px solid #1b4a59;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #1b4a59;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.todo {
+    width: 20vw;
+    margin: 30vh;
+    margin: 0 auto;
+}
+
+/* Style du champ de saisie et du bouton d'ajout */
+.input {
+    display: flex;
+    flex-direction: column;
+    /* Stack input and button vertically on small screens */
+    margin-bottom: 10px;
+}
+
+.input-field {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: #1b4a59 solid 1px;
+    border-radius: 8px;
+}
+
+
+
+.btn {
+    width: 60px;
+    height: 20px;
+    font-size: 0.75rem;
+    background-color: #1b4a59;
+    color: aliceblue;
+    /* Make the button full width */
+}
+
+/* Ajout des règles de média query pour les écrans plus petits */
+@media only screen and (max-width: 600px) {
+    .input {
+        flex-direction: row;
+        /* Revert to horizontal layout on small screens */
+        align-items: center;
+        /* Center items horizontally on small screens */
+    }
+
+    .input-field {
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .btn {
+        width: auto;
+    }
+}
+
+
+/* Style de la liste des tâches */
+.scroll {
+    list-style-type: none;
+    padding: 8px;
+    min-height: 20vh;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 2px solid #1b4a59;
+    border-radius: 5px;
+}
+
+/* Style des éléments de la liste des tâches */
+.scroll li {
+    padding: 10px;
+    border-bottom: 1px solid #1b4a59;
+}
+
+/* Style du compteur d'éléments et du bouton de suppression */
+.counter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter {
+    margin: 10px 0;
+}
+
+#deleteButton {
+    background-color: #1b4a59;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 80vw;
+        /* Adjust the width for smaller screens */
+    }
+}

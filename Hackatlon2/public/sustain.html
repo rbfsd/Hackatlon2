@@ -9,7 +9,7 @@
     <title>Hackatlon2</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="./style/sustain.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -47,10 +47,24 @@
     </header>
 
     <main>
-        <div class="container">
-            <h1>Options</h1>
-            <button onclick="showTasks()">Todo List</button>
-            <button onclick="openChat()">Open a chat</button>
+        <div class="wrapper">
+            <section class="todo">
+                <h2>To-do list</h2>
+                <div class="input">
+                    <input type="text" class="input-field" id="todoInput" placeholder="Add a new todo" />
+                    <button class="btn">Add</button>
+                </div>
+                <ul class="scroll">
+                    <li id="todoList"></li>
+                </ul>
+                <div>
+                    <hr class="counter" />
+                    <div class="counter-container">
+                        <p><span id="todoCount">0</span> items total</p>
+                        <button id="deleteButton">Delete All</button>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
