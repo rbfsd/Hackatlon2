@@ -43,25 +43,39 @@
     </header>
 
     <main>
-        <!-- <div class="wrapper">
-            <form id="search-form" class="search-form" method="post">
-                <input type="text" id="name" name="name" placeholder="Rechercher par nom" required>
-                <br>
-                <button type="submit" class="search-button">Rechercher</button>
-            </form>
-            <div id="results" class="results"></div>
+        <div class="wrapper">
+            <div class="card card1">
+                <div class="search-container">
+                    <form id="search-form" class="search-form" onsubmit="return handleSearch()" method="get">
+                        <input type="text" id="search" name="search" placeholder="Search a name" required>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
 
-            <form id="add-story-form" class="add-story-form" method="post">
-                <label for="story" class="add-story-label">Add your story:</label><br>
-                <textarea id="story" name="story" rows="4" cols="50" required class="add-story-textarea"></textarea><br>
-                <input type="hidden" id="disparu-id" value="{disparuId}" class="disparu-id">
-                <button type="submit" class="add-story-button">Add story</button>
-            </form>
+                <div id="search-results" class="search-results">
+                    <!-- Le contenu de la fenêtre pop-up sera inséré ici -->
+                </div>
+            </div>
 
-        </div> -->
+            <div class="card card2">
+                <div class="add-story-container">
+                    <form id="add-story-form" class="add-story-form">
+                        <label for="story" class="add-story-label">Add your story:</label><br>
+                        <textarea id="story" name="story" rows="4" cols="50" required
+                            class="add-story-textarea"></textarea><br>
+                        <input type="hidden" id="disparu-id" value="{disparuId}" class="disparu-id">
+                        <button type="submit" class="add-story-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-        <h1>Liste de noms</h1>
-        <ul id="nameList"></ul>
+        <!-- <div class="card">
+                <h1>Liste de noms</h1>
+                <ul id="nameList"></ul>
+            </div> -->
+
+
     </main>
 
     <footer>
@@ -89,6 +103,7 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/memories.js"></script>
+    <script src="scripts/search.js"></script>
 </body>
 
 </html>
