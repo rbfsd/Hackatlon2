@@ -1,0 +1,78 @@
+.wrapper {
+    width: 40vw;
+    height: 60vh;
+    background-color: transparent;
+    border: 2px solid #1b4a59;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #1b4a59;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+/* Style général du formulaire */
+.contact-section {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Style du titre */
+.contact-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1b4a59;
+    /* Couleur du texte */
+}
+
+/* Style de la bordure */
+.border {
+    background: #3498db;
+    /* Couleur de la bordure */
+    height: 3px;
+    width: 50px;
+    margin: auto;
+}
+
+/* Style du formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style des champs de texte */
+.contact-form-text {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Couleur de la bordure du champ de texte */
+    border-radius: 5px;
+    /* Coins arrondis */
+}
+
+/* Style du champ de message */
+.contact-form-message {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    /* Empêcher le redimensionnement du champ de texte */
+}
+
+/* Style du bouton d'envoi */
+.contact-form-btn {
+    background: #2980b9;
+    color: #fff;
+    /* Couleur du texte du bouton */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Effet de survol sur le bouton */
+.contact-form-btn:hover {
+    background: #2980b9;
+    /* Couleur de fond au survol */
+}

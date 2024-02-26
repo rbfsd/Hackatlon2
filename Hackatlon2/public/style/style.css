@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Navbar */
+header {
+    background-color: #1b4a59;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px white solid;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+header nav {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+header nav img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header nav button {
+    background-color: darkgoldenrod;
+    color: #fff;
+    border: 2px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    /* Ajout de cette propriété pour aligner à droite */
+}
+
+header nav button:hover {
+    background-color: #1b4a59;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+header .menu li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menu li:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+header div.title {
+    width: 40vw;
+    height: 40vh;
+}
+
+header div h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+}
+
+/* footer */
+
+.footer {
+    background: #1b4a59;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 1em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+/* Existing styles for .wrapper outside media query */
+
+@media (max-width: 720px) {
+    .wrapper {
+        width: 80vw;
+        /* Adjust the width as needed for smaller screens */
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+}

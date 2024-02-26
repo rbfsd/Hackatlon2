@@ -1,0 +1,26 @@
+.wrapper {
+    width: 40vw;
+    height: 85%;
+    background-color: transparent;
+    border: 2px solid #1b4a59;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #1b4a59;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h2 {
+    text-align: center;
+}
+
+/* Existing styles for .wrapper outside media query */
+
+@media (max-width: 720px) {
+    .wrapper {
+        width: 80vw;
+        /* Adjust the width as needed for smaller screens */
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+}
