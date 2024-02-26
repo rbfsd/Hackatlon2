@@ -3,7 +3,7 @@ let candleCount = 0;
 function switchOnCandle() {
   candleCount++;
   const candleImage = document.createElement("img");
-  candleImage.src = "/Hackatlon2/public/images/pexels-george-becker-333515.jpg"; // Ajoute le chemin de ton image
+  candleImage.src = "../images/pexels-george-becker-333515.jpg"; // Ajoute le chemin de ton image
   candleImage.alt = "Candle Image";
   candleImage.style.width = "200px"; // Ajuste la taille de l'image selon tes besoins
 
