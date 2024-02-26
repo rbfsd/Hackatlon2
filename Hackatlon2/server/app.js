@@ -14,6 +14,26 @@ app.get("/", (req, res) => {
   res.sendFile(indexPath);
 });
 
+app.get("/about", (req, res) => {
+  const indexPath = path.join(__dirname, "../public/about.html");
+  res.sendFile(indexPath);
+});
+
+app.get("/memories", (req, res) => {
+  const indexPath = path.join(__dirname, "../public/memories.html");
+  res.sendFile(indexPath);
+});
+
+app.get("/contact", (req, res) => {
+  const indexPath = path.join(__dirname, "../public/contact.html");
+  res.sendFile(indexPath);
+});
+
+app.get("/sustain", (req, res) => {
+  const indexPath = path.join(__dirname, "../public/sustain.html");
+  res.sendFile(indexPath);
+});
+
 app.post("/contact", (req, res) => {
   // Traite les données du formulaire ici...
   console.log(req.body);
