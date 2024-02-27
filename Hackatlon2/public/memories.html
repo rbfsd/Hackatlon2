@@ -46,9 +46,9 @@
         <div class="wrapper">
             <div class="card card1">
                 <div class="search-container">
-                    <form id="search-form" class="search-form" onsubmit="return handleSearch()" method="get">
+                    <form id="search-form" class="search-form" method="get">
                         <input type="text" id="search" name="search" placeholder="Search a name" required>
-                        <button type="submit" class="search-button">Search</button>
+                        <button type="submit" class="search-button" onclick="performSearch(event)">Search</button>
                     </form>
                 </div>
 
@@ -102,7 +102,6 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/memories.js"></script>
     <script src="scripts/search.js"></script>
 </body>
 

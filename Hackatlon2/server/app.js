@@ -1,15 +1,7 @@
 const express = require("express");
 const path = require("path");
-const pgp = require("pg-promise")();
 const bodyParser = require("body-parser");
-
-const db = pgp({
-  user: "postgres",
-  password: "123456",
-  host: "localhost",
-  port: 5432,
-  database: "Heroes",
-});
+const { db } = require("../config/dbonfig");
 
 const app = express();
 const port = 3000;
@@ -33,6 +25,31 @@ app.get("/about", (req, res) => {
 app.get("/memories", (req, res) => {
   const indexPath = path.join(__dirname, "../public/memories.html");
   res.sendFile(indexPath);
+});
+
+app.get("/performSearch", async (req, res) => {
+  const searchTerm = req.query.name;
+
+  try {
+    const results = await db("abducted_persons")
+      .where("name", "ilike", `%${searchTerm}%`)
+      .select(
+        "id",
+        "name",
+        "age",
+        "city",
+        "abducted_date",
+        "status",
+        "death_date",
+        "body_location",
+        "family_notification_date"
+      );
+
+    res.json(results);
+  } catch (error) {
+    console.error("Database error:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 });
 
 app.get("/contact", (req, res) => {

@@ -15,31 +15,14 @@ hackathon-project/
 | |-- sustain.css
 | |-- scripts/
 | |-- main.js
+| |-- search.js
+| |-- memories.js
+| |-- sustain.js
 |
 |-- server/
 | |-- app.js
-| |-- routes/
-| | |-- disparuRoutes.js
-| |-- controllers/
-| | |-- disparuController.js
-| |-- models/
-| | |-- disparuModel.js
-| | |-- todolistModel.js
-| |-- database/
+|
+|-- config/
 | |-- dbConfig.js
-|
-|-- views/
-| |-- home.ejs
-| |-- searchResults.ejs
-| |-- disparuDetails.ejs
-|
-|-- tests/
-| |-- unitTests/
-| | |-- disparuController.test.js
-| | |-- todolistModel.test.js
-| |
-| |-- integrationTests/
-| |-- apiIntegration.test.js
-|
 |-- package.json
 |-- README.md
